@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    JBoss 4 Application Server Guide
+    $Revision: 1.1 $
+-->
+<project name="JBoss book examples" default="build-all" basedir=".">
+    <!-- Allow overrides from a local properties file -->
+    <property file="ant.properties" />
+    
+    <!-- Override with your JBoss server bundle dist location -->
+    <property name="jboss.dist"        value="C:/ATG/jboss-eap-5.0/jboss-as" />
+    <property name="jboss.deploy.conf" value="default" />
+    <property name="jboss.deploy.dir"  value="${jboss.dist}/server/${jboss.deploy.conf}/deploy" />
+    <property name="src.dir"           value="${basedir}/src/main" />
+    <property name="src.resources"     value="${basedir}/src/resources" />
+    <property name="lib.dir"           value="${basedir}/lib" />
+    <property name="build.dir"         value="${basedir}/output" />
+    <property name="build.src.dir"     value="${basedir}/output/gen-src" />
+    <property name="build.classes.dir" value="${build.dir}/classes" />
+	<property name="user.lib.dir" value="D:/Software/libs"/>
+
+    <path id="build.path">
+        <pathelement location="${user.lib.dir}/concurrent.jar" />
+        <pathelement location="${user.lib.dir}/jbossall-client.jar" />
+        <pathelement location="${user.lib.dir}/jbossws14-client.jar" />
+        <pathelement location="${user.lib.dir}/jnet.jar" />
+        <pathelement location="${user.lib.dir}/jnp-client.jar" />
+        <pathelement location="${user.lib.dir}/jsse.jar" />
+        <pathelement location="${user.lib.dir}/log4j.jar" />
+        <pathelement location="${user.lib.dir}/javax.servlet.jar" />
+        <pathelement location="${user.lib.dir}/jboss.jar" />
+        <pathelement location="${user.lib.dir}/jbosssx-3.2.3[1].jar" />
+        <pathelement location="${user.lib.dir}/scheduler-plugin.jar" />
+        <pathelement location="${user.lib.dir}/jbossha.jar" />
+        <pathelement location="${user.lib.dir}/jboss-system-4.0.2[1].jar" />
+        <pathelement location="${user.lib.dir}/jboss-jmx.jar" />
+		<pathelement location="${user.lib.dir}/jboss-mbeans.jar" />
+		<pathelement location="${user.lib.dir}/ejb.jar" />
+		<pathelement location="${lib.dir}/junit.jar" />
+        <pathelement location="${build.classes.dir}" />
+    </path>
+	<path id="build.path2">
+        
+        
+        <fileset file="D:/Software/libs/*.jar">
+		
+        </fileset>
+        
+        <pathelement location="${build.classes.dir}" />
+    </path>
+
+    <path id="client.path">
+        <pathelement location="${src.resources}" />
+        
+        <fileset dir="${jboss.dist}/client">
+            <include name="**/*.jar" />
+        </fileset>
+        
+        <pathelement location="${build.classes.dir}" />
+    </path>
+
+
+    <!-- 
+         Validate the jboss.dist value by looking for a the client/jboss-j2ee.jar jar 
+    -->
+    <target name="validate">
+        <available property="classpath_id" value="build.path" file="${jboss.dist}/client/jboss-javaee.jar" />
+    </target>
+    
+    <target name="fail_if_not_valid" unless="classpath_id">
+        <fail message="jboss.dist=${jboss.dist} is not a valid JBoss dist directory" />
+    </target>
+
+    <target name="init" depends="validate,fail_if_not_valid">
+        <property name="classpath" refid="${classpath_id}" />
+        <echo message="Using jboss.dist=${jboss.dist}" />
+        <mkdir dir="logs" />
+    </target>
+    
+    <!-- Compile all java source under src/main -->
+    <target name="compile" depends="init">
+        <mkdir dir="${build.classes.dir}" />
+        <mkdir dir="${build.src.dir}" />
+        <javac srcdir="${src.dir}" 
+               destdir="${build.classes.dir}" 
+               debug="on" deprecation="on" 
+               optimize="off">
+            <classpath>
+                <path refid="build.path" />
+            </classpath>
+            <src path="${build.src.dir}" />
+            <!-- <include name="ListJar.java" /> -->
+            <include name="org/jboss/**" />
+        </javac>
+    </target>
+
+    <target name="build-all" depends="compile">
+        <ant antfile="build-jmx.xml" />
+        <ant antfile="build-naming.xml" />
+        <ant antfile="build-jms.xml" />
+        <ant antfile="build-jca.xml" />
+        <ant antfile="build-security.xml" />
+        <ant antfile="build-misc.xml" />
+    </target>
+
+    <target name="build-chap" depends="compile">
+        <ant antfile="build-${chap}.xml" />
+    </target>
+
+    <!-- Use -Dchap=N to run chapN-config -->
+    <target name="config" depends="compile">
+        <property name="client.path" refid="client.path" />
+        <ant antfile="build-${chap}.xml" inheritRefs="true" target="config" />
+    </target>
+
+    <!-- Use -Dchap=N -Dex=M to run chapN-exampleM -->
+    <target name="run-example" depends="compile">
+        <property name="client.path" refid="client.path" />
+        <ant antfile="build-${chap}.xml" inheritRefs="true" target="run-example${ex}" />
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete dir="logs" />
+    </target>
+</project>

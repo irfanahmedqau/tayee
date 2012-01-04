@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Software/libs/standard.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/concurrent.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/ejb.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/javaee-api-6.0[1].jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jbossall-client.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jbossws14-client.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jnp-client.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jstl.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/log4j.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jcert.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jnet.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jsse.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jboss.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jboss-jmx.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/scheduler-plugin.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jbossha.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jboss-mbeans.jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jboss-system-4.0.2[1].jar"/>
+	<classpathentry kind="lib" path="D:/Software/libs/jbosssx-3.2.3[1].jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
