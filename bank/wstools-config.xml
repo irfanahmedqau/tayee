@@ -1,0 +1,9 @@
+<configuration xmlns="http://www.jboss.org/jbossws-tools">
+    <java-wsdl>
+        <service name="TellerService" style="rpc" endpoint="com.jboss.ebank.TellerEndpoint"/>
+        <namespaces target-namespace="http://ebank.jboss.com/teller"
+                    type-namespace="http://ebank.jboss.com/teller/types"/>
+        <mapping file="jaxrpc-mapping.xml"/>
+        <webservices ejb-link="TellerBean"/>
+    </java-wsdl>
+</configuration>
