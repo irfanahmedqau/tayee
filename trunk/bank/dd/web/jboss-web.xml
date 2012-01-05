@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE jboss-web PUBLIC 
+          "-//JBoss//DTD Web Application 2.3V2//EN" 
+          "http://www.jboss.org/j2ee/dtd/jboss-web_3_2.dtd">
+<jboss-web>
+    <!-- Uncomment this element to add security for the application -->
+    <!-- <security-domain>java:/jaas/dukesbank</security-domain> -->
+
+    <ejb-ref>
+        <ejb-ref-name>ejb/accountController</ejb-ref-name>
+        <jndi-name>MyAccountController</jndi-name>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>ejb/customerController</ejb-ref-name>
+        <jndi-name>MyCustomerController</jndi-name>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>ejb/txController</ejb-ref-name>
+        <jndi-name>MyTxController</jndi-name>
+    </ejb-ref>
+</jboss-web>
