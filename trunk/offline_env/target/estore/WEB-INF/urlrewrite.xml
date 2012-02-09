@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN" "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+<urlrewrite default-match-type="wildcard">
+	
+	<rule>
+		<from>/</from>
+		<to>/app/productEditForm</to>
+	</rule>
+	
+	<!-- For static page -->
+	<rule>
+		<from>/**.html</from>
+		<to>/$1.html</to>
+	</rule>
+	<!-- Never rewrite url of static resources -->
+	<rule>
+		<from>/lib/**</from>
+		<to>/lib/$1</to>
+	</rule>
+	
+	<rule>
+		<from>/images/**</from>
+		<to>/images/$1</to>
+	</rule>
+	
+	<rule>
+		<from>/js/**</from>
+		<to>/js/$1</to>
+	</rule>
+	
+	<rule>
+		<from>/css/**</from>
+		<to>/css/$1</to>
+	</rule>
+	
+	<rule>
+		<from>/fonts/**</from>
+		<to>/fonts/$1</to>
+	</rule>	
+	<!-- Don't rewrite url of dwr -->
+	<rule>
+		<from>/dwr/**</from>
+		<to>/dwr/$1</to>
+	</rule>
+	
+	<!-- The url should be accessed by spring dispatcher servlet -->
+	<rule>
+		<from>/**</from>
+		<to>/app/$1</to>
+	</rule>
+	
+	<outbound-rule>
+		<from>/app/**</from>
+		<to>/$1</to>
+	</outbound-rule>	
+</urlrewrite>
