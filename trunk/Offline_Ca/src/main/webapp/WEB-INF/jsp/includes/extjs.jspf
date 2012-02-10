@@ -1,0 +1,2 @@
+<link rel="stylesheet" type="text/css" href="${extjsRootPath}/resources/css/ext-all.css" />
+<script type="text/javascript" src="${extjsRootPath}/bootstrap.js"></script>
