@@ -8,3 +8,4 @@
 <c:set var="jsRootPath" value="${contextPath}/js" scope="application" />
 <c:set var="cssRootPath" value="${contextPath}/css" scope="application" />
 <c:set var="imagesRootPath" value="${contextPath}/images" scope="application" />
+<c:set var="extjsRootPath" value="${contextPath}/extjs" scope="application" />

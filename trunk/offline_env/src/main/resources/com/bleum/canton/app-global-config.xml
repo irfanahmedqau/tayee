@@ -17,8 +17,27 @@
 	<!-- Load Data Sources by JNDI -->
 	<jee:jndi-lookup id="productDataSource" jndi-name="jdbc/ProductDB"/>
 	<jee:jndi-lookup id="storageDataSource" jndi-name="jdbc/StorageDB"/>
-
+	<jee:jndi-lookup id="versionedDataSource" jndi-name="jdbc/VersionedDB"/>
+	
 	<!-- Hibernate Session Factories -->
+	
+	<bean id="versionedSessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="versionedDataSource" />
+		<property name="packagesToScan">
+			<list>   
+				<value>com.bleum.canton.*.entity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+	
 	<bean id="productSessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource" ref="productDataSource" />
