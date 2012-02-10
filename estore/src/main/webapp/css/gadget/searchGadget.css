@@ -1,0 +1,33 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+.searchPanel { float:left; width:540px; height:38px; }
+.searchPanel .panelLBg img, .searchPanel .panelRBg img { float:left; }
+.searchPanel .panelM { background:url(../../images/seachArea_Bg_M.gif) repeat-x; height:38px; width:490px; float:left; padding-left:5px; line-height:36px; color:#333; font-size:12px; }
+.searchPanel .panelM span { font-size:12px; line-height:36px; color:#999; }
+.searchPanel .panelM .keyInfoInput { width:280px; float:left; }
+.searchPanel .panelM .keyInfoInput input { border:0px; font-size:12px;  padding:0; width:250px;}
+.searchPanel .panelM .keyInfoInput input.defaultKey { color:#999; }
+.searchPanel .panelM .areaSelect { float:left; width:160px; }
+.searchPanel .panelM select{ font-size:12px; color:#333; margin:8px 0 0 0; width:160px; *margin-top:0px; _margin-top:8px; padding-left:3px; }
+.searchPanel .panelM .searchButton { height:19px; width:37px; float:left; margin:7px 0 0 8px; *margin-top:8px; }
+#searchImg {background:url(../../images/seachArea_btn.gif) no-repeat; width: 37px; height: 19px; border: 0;cursor: pointer; position: absolute;}

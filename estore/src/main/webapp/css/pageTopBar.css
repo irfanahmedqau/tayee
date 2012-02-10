@@ -1,0 +1,55 @@
+/*-------------------------------------------------------------------------
+For topbar display
+
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+/*the whole topbar*/
+#topbar { height:22px; background:#2270BE;color:#fff; font-size:12px; border-bottom:1px solid #00488f;}
+
+/*the welcome word*/
+#topbar .topbar-welcome-word{width:960px;margin:0 auto;padding-top:3px;}
+#topbar .topbar-welcome-word p{float:left;}
+
+/*the login area*/
+#topbar .topbar-login-area{float:left;color:#94c7fa;}
+#topbar .topbar-login-area a{color:#94c7fa;text-decoration:none;}
+#topbar .topbar-login-area a:hover{color:#b4daff;font-size:12px;}
+
+/*the my account*/
+#topbar .topbar-my-account{float:left;color:#34257a;}
+
+#topbar a.whiteText{color:#fff;text-decoration:none;}
+#topbar a.whiteText:hover{color:#fff;}
+
+/*the store locator*/
+#topbar .topbar-store-locator{float:left;color:#34257a;}
+
+/*the help center*/
+#topbar .topbar-help-center{float:left;color:#34257a;}
+
+/*the my favorite*/
+#topbar .topbar-my-favorite{float:left;color:#34257a;}
+
+/*the online service*/
+#topbar .topbar-online-service{background: url(/images/walmartSprite.gif) 0 -22px;width:11px;height:11px;overflow:hidden;margin-right:5px;display:inline-block;}
+
+/*the shopping cart*/
+#topbar .topbar-shopping-cart{background: url(/images/walmartSprite.gif) -11px -22px;width:11px;height:11px;overflow:hidden;margin-right:5px;display:inline-block;}
