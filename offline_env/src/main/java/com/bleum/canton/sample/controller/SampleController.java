@@ -15,9 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+
 import com.bleum.canton.sample.command.ProductForm;
-import com.bleum.canton.sample.service.ICategoryManagementService;
 import com.bleum.canton.sample.service.IProductManagementService;
+
 
 @Controller
 public class SampleController {
@@ -27,8 +28,7 @@ public class SampleController {
 	@Resource(name = "productManagementService")
 	private IProductManagementService productManagementService;
 	
-	@Resource(name= "categoryManagementService")
-	private ICategoryManagementService categoryManagementService;
+	
 	
 	private static final String PRODUCT_EDIT_PAGE = "sample/productEdit";
 	
@@ -62,31 +62,8 @@ public class SampleController {
 		return mav;
 	}
 	 
-	@RequestMapping(value= "/home", method = RequestMethod.GET)
-	public ModelAndView homePage(HttpServletRequest request){
-		logger.debug("load homepage...");
-		ModelAndView mav = new ModelAndView(CATEGORY_HOME_PAGE);
-		return mav;
-	}
+
 	
-	@RequestMapping(value= "/loadingCategory", method = RequestMethod.GET)
-	public ModelAndView loadingCategory(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "node") String node){
-		logger.debug("loadingCategory...");
-		String parentId = "1001";
-		logger.debug("[parentId]: "+ parentId);
-		logger.debug("[node]: " + node);
-		
-		ModelAndView mav = new ModelAndView(CATEGORY_HOME_PAGE);
-		response.setContentType("charset=UTF-8");
-		String json = categoryManagementService.getCategoryJSON(parentId);
-		try {
-			response.getWriter().write(json);
-		} catch (IOException e) {
-			// TODO Auto-generated catch b
-			logger.error("error happens when loading category");
-			e.printStackTrace();
-		}
-		return null;
-	}
+
 	
 }

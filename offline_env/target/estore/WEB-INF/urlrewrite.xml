@@ -4,7 +4,7 @@
 	
 	<rule>
 		<from>/</from>
-		<to>/app/productEditForm</to>
+		<to>/app/home</to>
 	</rule>
 	
 	<!-- For static page -->
@@ -31,6 +31,11 @@
 	<rule>
 		<from>/css/**</from>
 		<to>/css/$1</to>
+	</rule>
+	
+	<rule>
+		<from>/extjs/**</from>
+		<to>/extjs/$1</to>
 	</rule>
 	
 	<rule>
