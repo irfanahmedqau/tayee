@@ -38,14 +38,11 @@ public class CategoryController {
 	
 	@RequestMapping(value= "/loadingCategory", method = RequestMethod.GET)
 	public ModelAndView loadingCategory(HttpServletRequest request, HttpServletResponse response, @RequestParam(value = "node") String node){
-		logger.debug("loadingCategory...");
-		String parentId = "1001";
-		logger.debug("[parentId]: "+ parentId);
+		logger.debug("FindingCategory");
 		logger.debug("[node]: " + node);
-		
 		ModelAndView mav = new ModelAndView(CATEGORY_HOME_PAGE);
 		response.setContentType("charset=UTF-8");
-		String json = categoryManagementService.getCategoryJSON(parentId);
+		String json = categoryManagementService.getCategoryJSON(node);
 		try {
 			response.getWriter().write(json);
 		} catch (IOException e) {
