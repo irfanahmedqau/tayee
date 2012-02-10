@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+fieldset {
+	background-color: silver;
+	border-color: black;
+	border-width: thin;
+}
+
+legend {
+	font-size: large;
+	font-weight: bold;
+}
+
+label {
+	padding: 0px 0px 0px 0px;
+	margin: 10px 5px 0px 0px;
+	height: 18px;
+	display: block;
+}
+
+input {
+	padding: 0px 0px 0px 0px;
+	margin: 10px 5px 10px 0px;
+	height: 20px;
+}
+
+.attrName {
+	float: left;
+	width: 20%;
+	text-align: right;
+	font-weight: bold;
+}
+
+.attrVal {
+	float: left;
+	text-align: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.message {
+	font-size: medium;
+	font-weight: bold;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+}

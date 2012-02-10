@@ -1,0 +1,56 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+/*whole style of leftNavigation*/
+#leftNavigation {background:url(../../images/cantonSprite.gif) 0 -38px;height:333px;width:188px; margin-bottom:10px; position: relative;left:1px;top:1px;top:0px\0;}
+#leftNavigation h2{ background:url(../../images/cantonSprite.gif) -209px -38px;width:181px;height:24px;color:#fff; font:bold 13px/16px tahoma, arial, 宋体;padding:4px 0 0 7px;}
+#leftNavigation h2 a{width:12px;height:11px; background:url(/images/walmartSprite.gif) -397px -38px;display:inline-block;position: absolute;left:170px;top:10px;margin-bottom:0px;overflow:hidden;}
+#leftNavigation li{ font-size:14px; cursor: default; height:32px; overflow:hidden;width:190px;} 
+#leftNavigation li h3{ border: 1px solid #FFFBF0; border-bottom:1px solid #FDEBC1; height: 30px; line-height:30px; padding-left: 10px; font-size:14px; background:url(../../images/cantonSprite.gif) -187px -474px no-repeat;}
+#leftNavigation li h3 a { text-decoration: none; color:#333; font-weight: normal;}
+#leftNavigation li div.bar { background:#fff; width:1px; height:30px; position:absolute; margin:-31px 0 0 145px; z-index:2002; display:none;}
+#leftNavigation li div.menu{ display: none; position: absolute; width: 807px; height: auto; border: 1px solid #f80; top: 0px; left: 150px; background: #FFFCF6; font-size:12px; cursor:default; } 
+#leftNavigation li div.menu a { text-decoration:none; }
+#leftNavigation li div.menu a:hover { color:#f60; text-decoration:underline;}
+#leftNavigation li:hover h3{ display:block; border: 1px solid #f80; background:#fff;}
+#leftNavigation li:hover h3 a{  text-decoration: underline; color:#f60;}
+#leftNavigation li:hover div.bar{ display: block; }
+#leftNavigation li:hover div.menu{ display: block; z-index:2001;}
+
+/*the style of sub items*/
+.SubItem { float:left; width:615px; padding:0 4px 0 8px; background:#fff; }
+.SubItem div { float:left; width:620px; padding:3px 0; border-bottom:solid 1px #eee; }
+.SubItem div.bottom { float:left; width:645px; padding:4px 0; border-bottom:none; }
+.SubItem div .Fore { width:100px; text-align:center; float:left; margin:4px 0; border-bottom:none; }
+.SubItem div .Fore a { color:#666; font-weight:bold; text-decoration:underline; }
+.SubItem div .list { float:left; width:515px; margin-left:4px; border-bottom:none; }
+.SubItem div .list dl { padding:0; margin:0; }
+.SubItem div .list dl dt { padding:0 10px; margin:2px 0; float:left; list-style:none; border-left:solid 1px #ccc; height:18px; }
+.SubItem div .list dl dt a{ color:#666 }
+
+
+/*the promotion style in each sub item*/
+.Promotion { width:140px; float:left; padding:0 10px; }
+.Promotion .title { width:176px; float:left; color:#333; font-weight:bold; padding-bottom:4px; }
+.Promotion .title div { float:left; padding-top:12px; }
+.Promotion table tr td { padding-bottom:6px; }
+.Promotion table tr td a { color:#666 }
