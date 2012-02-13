@@ -12,51 +12,40 @@ Ext.application({
 			controllers : ['Main'],
 			launch : function() {
 						Ext.create('Ext.container.Viewport', {
-											alias : 'widget.viewport',
-										    layout: 'border',
-										    items: [{
-											    	split: false,
-											        region: 'north',
-											        border: false ,
-							                        tbar: [{  
-										                     text: 'Commerce',  
-										                     menu: [{  
-										                         text: 'Category Management',  
-										                         handler: function() { // 
-										                          //   Ext.getCmp('content-panel').layout.setActiveItem('category-panel'); 
-										                        		 }  
-										                   	 	 }, {  
-										                         text: 'Product Management', 
-										                         iconCls: 'icon-send',
-										                         handler: function() {
-										                         //	Ext.getCmp('content-panel').layout.setActiveItem('product-panel'); 
-										                        			 }
+									alias : 'widget.viewport',
+								    layout: 'border',
+								    items: [{
+								    		split: false,
+									        region: 'north',
+									        border: false ,
+					                        tbar: [{  
+					                        		text: 'Commerce',  
+									                menu: [{  
+									                         text: 'Category Management'
+									                   	 	 }, {  
+								                        	 text: 'Product Management'
 										                   	 	 },{
-										                    	 text: 'Item Management',
-										                    	 iconCls: 'icon-print',
-										                    	 handler: function(){
-										                    	 //	Ext.getCmp('content-panel').layout.setActiveItem('item-panel');
-										                    			 }
-										                    	 }]  
-										             	  }, {  
-										                   	   text: 'Refresh'  
-										               	  }, {  
-										                       text: 'Tools'  
-										                  }, '->', {  
-										                       text: 'Options',  
-										                       iconCls: 'options_icon',  
-										                       menu: [{  
-										                       	 		 text: 'User Info'  
-										                        	 }, {  
-										                         		 text: 'Settings'  
-										                     		 }, {  
-										                       		     text: 'Switch Theme'  
-										                    		 }]  
-										                  }, {  
-										                     text: 'Help'  
-										                  }, '-', {  
-										                     text: 'Logout'  
-										                  }] 
+									                    	 text: 'Item Management'
+										                   }]  
+										            }, {  
+							                   	   	 text: 'Refresh'  
+										            }, {  
+										             text: 'Tools'  
+										            }, '->', {  
+							                         text: 'Options',  
+							                       	 iconCls: 'options_icon',  
+										             menu: [{  
+						                       	 			 text: 'User Info'  
+								                        	 }, {  
+							                         		 text: 'Settings'  
+								                     		 }, {  
+							                       		     text: 'Switch Theme'  
+							                    		 	}]  
+										             }, {  
+								                     text: 'Help'  
+									                 }, '-', {  
+								                     text: 'Logout'  
+									                 }] 
 											    	 }, {
 										        		region: 'south',
 										       		    title: 'South Panel',
@@ -70,14 +59,9 @@ Ext.application({
 									        			 region: 'center', // this is what makes this panel into a region within the containing layout
 									        			 layout: 'card',
 									        			 margins: '2 5 5 0',
-									       				 // activeItem: 1,
-									       				  border: false
-									     				  //  items: layoutInstances
-										    }],
-										    renderTo: 'mainDiv'
+									       				 border: false
+										   			 }],
+									    renderTo: 'mainDiv'
 										});
-										
-
-
 			}
 		});
