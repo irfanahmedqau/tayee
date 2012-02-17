@@ -1,0 +1,10 @@
+#header {
+    background: #7F99BE url(../images/main-hd-bg.gif) repeat-x center;
+}
+#header h1{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    height:30px
+}
