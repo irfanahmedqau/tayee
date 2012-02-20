@@ -1,0 +1,49 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+.HotRanking { text-indent:-999em; width:202px; background: url("../../images/nav_button.gif") no-repeat -2px -2px; height:28px; margin-top:5px;}
+
+
+.tabgroup { font-size:12px; }
+.tabgroupTabs { background: url(../../images/cantonSprite.gif) -209px -346px;padding:10px 0 3px 5px;height:22px;}
+.tabgroupTabs a {color:#333;text-decoration:none; width:51px;height:20px;overflow:hidden;padding:5px 5px 0 7px;float:left;position:relative;bottom:-1px;_bottom:-4px;}
+.tabgroupTabs a:hover { }
+.tabgroupTabs a.cur {background:url(../../images/cantonSprite.gif) -209px -391px;display:block;color:#993300;}
+.tabContentContainer { height:350px;border-top:1px solid #e49400; border-left:1px solid #eee;border-right:1px solid #eee;border-bottom:1px solid #eee; padding:5px;overflow:hidden;}
+.tabcontent { height:350px; }
+.tabcontent ul { margin:0; padding:0;}
+.tabcontent li {list-style:none;margin:2px;line-height:20px;padding-left:20px; float:left;width:170px;}
+.tabcontent .num{ background:url(../../images/cantonSprite.gif);display:inline-block;width:15px;height:14px;margin:2px 5px 0px -20px; float:left;clear:right;}
+.tabcontent .imgText img{float:left;}
+.tabcontent .topOneText{width:110px;margin-left:5px;float:left;}
+.tabcontent .one{ background-position:-273px -391px;}
+.tabcontent .two{ background-position:-287px -391px;}
+.tabcontent .three{ background-position:-302px -391px;}
+.tabcontent .four{ background-position:-317px -391px;}
+.tabcontent .five{ background-position:-332px -391px;}
+.tabcontent .six{ background-position:-347px -391px;}
+.tabcontent .seven{ background-position:-362px -391px;}
+.tabcontent .eight{ background-position:-377px -391px;}
+.tabcontent .nine{ background-position:-392px -391px;}
+.tabcontent .ten{ background-position:-407px -391px;}
+.tabcontent li a ,.browserHistory ul li a{ color:#666; text-decoration:none;}
+.tabcontent li a:hover,.browserHistory li a:hover { color:#f60; text-decoration:underline;}

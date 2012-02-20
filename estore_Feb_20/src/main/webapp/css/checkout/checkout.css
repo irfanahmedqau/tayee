@@ -1,0 +1,336 @@
+.NCO-container {
+  width: 940px;
+  padding: 0 10px;
+  line-height: 18px;
+}
+.NCO-container h2 {
+  margin: 10px 0;
+  font: bold 14px/16px Arial, Helvetica, "宋体", sans-serif;
+  border-bottom: 2px solid #255a9c;
+  padding-bottom: 5px;
+  color: #255a9c;
+}
+.NCO-container h3 {
+  margin: 10px 0;
+  font: bold 12px/14px Arial, Helvetica, "宋体", sans-serif;
+}
+.NCO-container .NCO-content {
+  width: 700px;
+  float: left;
+}
+.NCO-container .NCO-content .NCO-section {
+  margin-bottom: 20px;
+}
+.NCO-container .NCO-aside {
+  width: 225px;
+  float: left;
+  margin-left: 15px;
+}
+.NCO-container .NCO-aside li {
+  list-style: none;
+}
+.NCO-container .NCO-aside h2 {
+  background: url("../../images/checkOutListHeader.gif") repeat scroll left 0 transparent;
+  border: none;
+  color: #993300;
+  font: bold 14px/16px Arial, Helvetica, "宋体", sans-serif;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.NCO-container .NCO-aside h2 span {
+  display: block;
+  margin: 0 0 0 10px;
+  height: 28px;
+  line-height: 30px;
+  background: url("../../images/checkOutListHeader.gif") repeat scroll right -30px transparent;
+}
+.NCO-container .NCO-aside .content {
+  width: 100%;
+  border-left: 1px solid #f3b100;
+  border-right: 1px solid #f3b100;
+  border-top: 1px solid #f3b100;
+  border-bottom: 1px solid #cccccc;
+}
+.NCO-container .NCO-aside .content .amount {
+  width: 20px;
+  padding: 5px 0 5px 7px;
+  vertical-align: top;
+}
+.NCO-container .NCO-aside .content .detail {
+  padding: 5px 0;
+  vertical-align: top;
+}
+.NCO-container .NCO-aside .content .price {
+  padding: 5px 7px 5px 0;
+  vertical-align: top;
+  text-align: right;
+  width: 60px;
+}
+.NCO-container .NCO-aside .summary, .NCO-container .NCO-aside .overall {
+  width: 100%;
+  color: #993300;
+  background-color: #fffbf2;
+  border-left: 1px solid #f3b100;
+  border-right: 1px solid #f3b100;
+  border-bottom: 1px solid #993300;
+}
+.NCO-container .NCO-aside .summary .label, .NCO-container .NCO-aside .overall .label {
+  width: 132px;
+  padding: 2px 0 2px 5px;
+  text-align: left;
+}
+.NCO-container .NCO-aside .summary .price, .NCO-container .NCO-aside .overall .price {
+  padding: 2px 5px 2px 0;
+  text-align: right;
+}
+.NCO-container .NCO-aside .overall {
+  border-bottom: 1px solid #f3b100;
+  font-weight: bold;
+}
+.NCO-container .NCO-overall {
+  clear: both;
+}
+.NCO-container .NCO-overall .NCO-section {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.NCO-container .subform {
+  line-height: 24px;
+  padding: 0 0 10px 5px;
+  border-bottom: 1px dashed #cccccc;
+  margin-bottom: 10px;
+}
+.NCO-container .optgroup {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.NCO-container .NCO-paymentInfo {
+  margin: 10px;
+}
+.NCO-container .NCO-paymentInfo .NCO-info-title {
+  background: url("../../images/productionTab_bg.gif") repeat-x scroll 0 0 transparent;
+  border: 1px solid #dedede;
+  color: #666666;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList, .NCO-container .NCO-paymentInfo .NCO-payList {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  padding: 15px 15px 5px 15px;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList ul, .NCO-container .NCO-paymentInfo .NCO-payList ul {
+  list-style: none;
+  *zoom: 1;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList ul:after, .NCO-container .NCO-paymentInfo .NCO-payList ul:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList ul li, .NCO-container .NCO-paymentInfo .NCO-payList ul li {
+  float: left;
+  padding: 0 10px 15px;
+  position: relative;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList ul li input, .NCO-container .NCO-paymentInfo .NCO-payList ul li input {
+  position: absolute;
+  top: 10px;
+  width: 13px;
+  height: 13px;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList ul li .iconbox, .NCO-container .NCO-paymentInfo .NCO-payList ul li .iconbox {
+  border: 1px solid #dddddd;
+  margin-left: 16px;
+  height: 30px;
+  width: 123px;
+  display: block;
+}
+.NCO-container .NCO-paymentInfo .NCO-cardList ul li .icon, .NCO-container .NCO-paymentInfo .NCO-payList ul li .icon {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../images/bankicon.png");
+  background-repeat: no-repeat;
+}
+.NCO-container .NCO-paymentInfo .NCO-payList ul li {
+  padding: 0 30px 15px;
+}
+.NCO-container .NCO-paymentInfo .NCO-payList ul li input {
+  top: 15px;
+}
+.NCO-container .NCO-paymentInfo .NCO-payList ul li .iconbox {
+  height: 38px;
+  width: 136px;
+}
+.NCO-container .NCO-paymentInfo .NCO-payList ul li .icon {
+  background-image: url("../../images/icon_payList.gif");
+}
+.NCO-container .NCO-paymentInfo .icbc {
+  background-position: 0 -40px;
+}
+.NCO-container .NCO-paymentInfo .cmb {
+  background-position: 0 -80px;
+}
+.NCO-container .NCO-paymentInfo .ccb {
+  background-position: 0 -320px;
+}
+.NCO-container .NCO-paymentInfo .boc {
+  background-position: 0 -520px;
+}
+.NCO-container .NCO-paymentInfo .abc {
+  background-position: 0 -480px;
+}
+.NCO-container .NCO-paymentInfo .comm {
+  background-position: 0 -600px;
+}
+.NCO-container .NCO-paymentInfo .psbc {
+  background-position: 0 -400px;
+}
+.NCO-container .NCO-paymentInfo .ceb {
+  background-position: 0 -440px;
+}
+.NCO-container .NCO-paymentInfo .spdb {
+  background-position: 0 -360px;
+}
+.NCO-container .NCO-paymentInfo .gdb {
+  background-position: 0 -280px;
+}
+.NCO-container .NCO-paymentInfo .citic {
+  background-position: 0 -200px;
+}
+.NCO-container .NCO-paymentInfo .cib {
+  background-position: 0 -3365px;
+}
+.NCO-container .NCO-paymentInfo .a-sdb {
+  background-position: 0 -240px;
+}
+.NCO-container .NCO-paymentInfo .cmbc {
+  background-position: 0 -120px;
+}
+.NCO-container .NCO-paymentInfo .bjbank {
+  background-position: 0 -3240px;
+}
+.NCO-container .NCO-paymentInfo .hzcb {
+  background-position: 0 -760px;
+}
+.NCO-container .NCO-paymentInfo .shbank {
+  background-position: 0 -840px;
+}
+.NCO-container .NCO-paymentInfo .bjrcb {
+  background-position: 0 -2640px;
+}
+.NCO-container .NCO-paymentInfo .spabank {
+  background-position: 0 -1880px;
+}
+.NCO-container .NCO-paymentInfo .fdb {
+  background-position: 0 -1320px;
+}
+.NCO-container .NCO-paymentInfo .nbbank {
+  background-position: 0 -1240px;
+}
+.NCO-container .NCO-paymentInfo .cft {
+  background-position: 0 0;
+}
+.NCO-container .NCO-paymentInfo .qmoney {
+  background-position: 0 -38px;
+}
+.NCO-container .NCO-paymentInfo .zfb {
+  background-position: 0 -76px;
+}
+.NCO-container .NCO-paymentInfo .mobile {
+  background-position: 0 -114px;
+}
+.NCO-container .NCO-cartList {
+  width: 100%;
+  border: 1px solid #035da6;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.NCO-container .NCO-cartList thead th, .NCO-container .NCO-cartList thead td {
+  background: url("../../images/checkoutTableHeader.gif") repeat-x scroll 0 0 transparent;
+  color: white;
+  height: 27px;
+  line-height: 27px;
+  font-weight: bold;
+}
+.NCO-container .NCO-cartList .thumb {
+  width: 100px;
+  text-align: left;
+  padding-left: 5px;
+}
+.NCO-container .NCO-cartList .price {
+  width: 200px;
+  text-align: right;
+}
+.NCO-container .NCO-cartList .amount {
+  width: 50px;
+  text-align: right;
+}
+.NCO-container .NCO-cartList .sum {
+  width: 150px;
+  padding-right: 15px;
+  text-align: right;
+}
+.NCO-container .NCO-cartList .orderItems li {
+  list-style: none;
+  color: #666666;
+}
+.NCO-container .NCO-cartList .orderItems th, .NCO-container .NCO-cartList .orderItems td {
+  border-bottom: 1px solid #cccccc;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.NCO-container .NCO-cartList .orderTotal th, .NCO-container .NCO-cartList .orderTotal td {
+  background-color: #f9f9f9;
+  padding: 2px 0 2px 5px;
+}
+.NCO-container .NCO-cartList .orderTotal .label {
+  font-weight: normal;
+  text-align: right;
+}
+.NCO-container .NCO-cartList .orderTotal .price {
+  text-align: right;
+  padding-right: 15px;
+}
+.NCO-container .NCO-cartList .orderTotal .totalPrice {
+  color: #ff6600;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.NCO-container .NCO-cartList .orderTotal .totalPrice span {
+  font-size: 20px;
+}
+.NCO-container .NCO-buttons {
+  *zoom: 1;
+  padding: 0 10px;
+}
+.NCO-container .NCO-buttons:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.NCO-container .NCO-buttons .left-buttons {
+  float: left;
+}
+.NCO-container .NCO-buttons .right-buttons {
+  float: right;
+}
+.NCO-section h2 span{
+	font-size: 12px;
+	font-weight: normal;
+	color: gray;
+}

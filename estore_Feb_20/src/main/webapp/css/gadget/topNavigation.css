@@ -1,0 +1,45 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+#topNavigation { height:45px;margin-left:155px;padding:20px 20px 0 20px;background:url(../../images/walmartSprite.gif) 0 49px;width:924px; display:block;}
+#topNavigation ul li{float:left; list-style:none;margin-right:2px;}
+#topNavigation ul li a{float:left;background:url(../../images/navigation_bg.gif) left -66px;height:28px;overflow:hidden;font-size:14px;margin-top:2px;text-decoration:none;color:#666;}
+#topNavigation ul li a span{ float:left;background:url(../../images/navigation_bg.gif) right -96px;padding:8px 12px 8px 0px;margin-left:12px;cursor:pointer;}
+#topNavigation ul li a:hover{background-position:left -186px;}
+#topNavigation ul li a:hover span{background-position:right -216px;}
+#topNavigation ul li a.current,#topNavigation ul li a.current:hover{background:url(../../images/navigation_bg.gif) left 0px;height:33px;position:relative;top:-3px;}
+#topNavigation ul li a.current span,#topNavigation ul li a.current:hover span{background:url(../../images/navigation_bg.gif) right -33px;color:#FFF;padding-top:10px;}
+#topNavigation li.directLink{float:right;background-image:none;margin-top:0;height:30px;}
+#topNavigation li.directLink ul li a{background:url(../../images/navigation_bg.gif) left -126px;}
+#topNavigation li.directLink ul li a span{background-position:right -156px;color:#cc3300;}
+#topNavigation li.directLink ul li a:hover{background-position:left -246px;}
+#topNavigation li.directLink ul li a:hover span{background-position:right -276px;}
+
+/* top nav flyout */
+.dropDown {float: left;position: absolute;width: 530px;height: 315px;*margin-left: -80px; margin-top: 30px;border: solid 1px #b5b7b7;padding:15px 0px 10px 10px;background: #fff;display: none;z-index: 10000;}
+.dropDown .col {float: left; width: 175px;}
+.dropDown .border-L {border-left: solid 1px  #b5b7b7; padding-left: 3px; padding-right: 3px; margin-bottom: 10px; margin-left: 10px;}
+.dropDown .cat_header {font-size: 12px; font-weight:  bold; margin-bottom:10px; }
+.dropDown .border-L p { margin-bottom:3px;}
+
+#topNavigation ul li div a{float: none; background:none;height: auto;overflow:hidden;font-size:12px;margin-top:0px;color:#666; }
+#topNavigation ul li div a:hover{text-decoration: underline; color:#f60;}

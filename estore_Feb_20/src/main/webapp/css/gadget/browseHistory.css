@@ -1,0 +1,31 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+.browserHistoryGray, .subCatalog , .sameCatalog, .ADContainer {width:199px;font-size:12px;float:left; clear:both; margin-top:10px;}
+.browserHistoryGray a{color:#666;}
+.browserHistoryGray a:hover{color:#FF6600;}
+.browserHistoryGray img {float:left;margin-top:10px;}
+.browserHistoryGray ul {list-style:none;margin:0;padding:0;}
+.browserHistoryGray li {border-top:1px solid #DDDDDD;padding-left:10px;float:left;margin:0;width:188px; padding-bottom:10px;}
+.browserHistoryGray .itext { width:130px; float:left;height:45px; height:40px \0; padding:10px 0 0 10px; overflow:hidden; display:block; }
+.browserHistoryGray .container, .sameCatalog .container  { border:1px solid #DDDDDD; border-top:0; float:left; width:198px;}
+.browserHistoryGray h2, .sameCatalog h2 { background: url("../../images/nav_title.png") no-repeat -3px -3px;height:22px;padding:5px 0 0 12px;margin:0; width:188px;}

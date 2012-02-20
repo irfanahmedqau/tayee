@@ -1,0 +1,23 @@
+/* login page */
+#loginpageHeader { height:100px; float:left; }
+#loginPage{width:958px;height:300px;margin-bottom:40px; }
+#loginPage .loginHeader{width:100%;background:url(../../images/loginTopBg.gif) repeat-x top; height:30px; float:left; }
+#loginPage .leftTop{background:url(../../images/walmartSprite.gif) no-repeat -766px -78px;width:4px;height:30px;display:block; float:left;}
+#loginPage .CenterTop { float:left;  padding-left:10px;font:bold 14px Verdana; color:#333; padding-top:8px; }
+#loginPage .rightTop{background:url(../../images/walmartSprite.gif) no-repeat -770px -78px;width:4px;height:30px;display:block; float:right;}
+#loginPage .loginContent{border-width:1px 1px 0px 1px; border-color:#ddd; border-style:solid;float:left;width:956px;background:url(../../images/loginBodyBg.gif) repeat-x top;height:270px;}
+#loginPage .loginLeft{float:left; padding:80px 15px 15px 180px;background:url(../../images/walmartSprite.gif) no-repeat -735px -159px;}
+#loginPage .loginRight{float:left;width:320px;padding:75px 15px 15px 15px;border-left:1px solid #ddd;height:170px;margin-top:5px;background:url(../../images/walmartSprite.gif) no-repeat right -445px;}
+#loginPage table{float:left;}
+#loginPage td{padding:0px 5px 15px 0px;font-size:14px;}
+#loginPage a{color:#999;}
+#loginPage a:hover{color:#f47b20;}
+#loginPage .loginBtn{ background:url(../../images/walmartSprite.gif) no-repeat -650px -159px;width:88px;height:39px;display:block;font-weight:bold;color:#fff;text-align:center;}
+#loginPage .loginBtn:hover{ background-position:-650px -198px;color:#fff; text-decoration:none;}
+#loginPage .registerBtn{ background:url(../../images/walmartSprite.gif) no-repeat -785px -83px;width:185px;height:22px;display:block;padding:10px; text-align:center; font-weight:bold;color:#666;}
+#loginPage .inputBg{background:url(../../images/walmartSprite.gif) no-repeat -455px -159px;width:191px;height:23px;display:block; border:none;padding:2px;}
+#loginPage .loginBottom{width:100%;background:url(../../images/loginFooterBg.gif) repeat-x top; height:13px;float:left;}
+#loginPage .leftBottom{background:url(../../images/walmartSprite.gif) no-repeat -766px -115px;width:4px;height:13px;display:block; float:left;}
+#loginPage .rightBottom{background:url(../../images/walmartSprite.gif) no-repeat -770px -115px;width:4px;height:13px;display:block; float:right;}
+#loginPage .checkResult{color:red}
+#loginPage .resultMessage{color:red;font-size: 14px;}
