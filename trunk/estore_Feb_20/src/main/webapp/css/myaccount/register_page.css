@@ -1,0 +1,22 @@
+/* login page */
+#registerPageHeader { height:100px; float:left; }
+#registerPage{width:958px;height:300px;margin-bottom:40px; }
+#registerPage .registerHeader{width:100%;background:url(../../images/loginTopBg.gif) repeat-x top; height:30px; float:left; }
+#registerPage .leftTop{background:url(../../images/walmartSprite.gif) no-repeat -766px -78px;width:4px;height:30px;display:block; float:left;}
+#registerPage .CenterTop { float:left;  padding-left:10px;font:bold 14px Verdana; color:#333; padding-top:8px; }
+#registerPage .rightTop{background:url(../../images/walmartSprite.gif) no-repeat -770px -78px;width:4px;height:30px;display:block; float:right;}
+#registerPage .registerContent{border-width:1px 1px 0px 1px; border-color:#ddd; border-style:solid;float:left;width:956px;background:url(../../images/loginBodyBg.gif) repeat-x top;height:400px;}
+#registerPage .registerLeft{float:left; padding:80px 15px 15px 180px;background:url(../../images/walmartSprite.gif) no-repeat -735px -159px;}
+#registerPage .registerRight{float:left;width:320px;padding:75px 15px 15px 15px;border-left:1px solid #ddd;height:170px;margin-top:5px;background:url(../../images/walmartSprite.gif) no-repeat right -445px;}
+#registerPage table{float:left;}
+#registerPage td{padding:0px 5px 15px 0px;font-size:14px;}
+#registerPage a{color:#999;}
+#registerPage a:hover{color:#f47b20;}
+#registerPage .registerBtn{ background:url(../../images/walmartSprite.gif) no-repeat -650px -159px;width:88px;height:39px;display:block;font-weight:bold;color:#fff;text-align:center;}
+#registerPage .registerBtn:hover{ background-position:-650px -198px;color:#fff; text-decoration:none;}
+#registerPage .inputBg{background:url(../../images/walmartSprite.gif) no-repeat -455px -159px;width:191px;height:23px;display:block; border:none;padding:2px;}
+#registerPage .registerBottom{width:100%;background:url(../../images/loginFooterBg.gif) repeat-x top; height:13px;float:left;}
+#registerPage .leftBottom{background:url(../../images/walmartSprite.gif) no-repeat -766px -115px;width:4px;height:13px;display:block; float:left;}
+#registerPage .rightBottom{background:url(../../images/walmartSprite.gif) no-repeat -770px -115px;width:4px;height:13px;display:block; float:right;}
+#registerPage .checkResult{color:red}
+#registerPage .resultMessage{color:red;font-size: 14px;}

@@ -1,0 +1,46 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+#mainContentCenter { width: 566px; float:left; height:auto; padding-top:7px;}
+
+
+#mainContentPOV{width:556px; height: 195px; overflow: hidden; font-size: 12px; padding-bottom: 0;}
+#mainContentPOV img{border:0;}
+#mainContentPOV ul{padding:0; background:#000; margin-top:-30px;}
+#mainContentPOV ul li{margin-top: 5px; list-style: none;float: left; height: 25px; margin-right: 1px; text-align: center; width: 110px; padding-top:5px; background:url(/images/nav_button.gif) -368px -203px no-repeat; opacity: 0.8; color: #333; cursor:pointer;}
+#mainContentPOV ul li.cur{color:#FFF; background:url(../../images/nav_button.gif) -250px -203px no-repeat; }
+#mainContentPOV a{text-decoration: none; border: none; color: #333;}
+#mainContentPOV ul li.cur a{color: #FFF;}
+
+
+
+
+.cateProd{margin-bottom: 5px; margin-top: 10px; font-size: 12px;overflow:hidden; height:220px; width:900px;}
+.cateProd strong {color:#c00;}
+.cateProd li{ float: left; width: 195px; list-style: none; height: 145px; text-align:center; margin-right:-20px;}
+.cateProd li div.titl { padding:0 20px 5px 20px; }
+.cateProd li div.titl a{text-decoration: none; color: #333; }
+.cateProd li div.titl a:hover{text-decoration: underline;}
+.cateProd li img{display: block;}
+.cateProd .proImg {width:100px; height:100px; margin-left:50px; margin-bottom:5px; }
+.cateProd h3 { background: url("../../images/nav_button.gif") no-repeat 0 -34px; height:34px; color:#FFF; padding:6px 0 0 30px;}
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<ResourceLink global="jdbc/Canton_Estore_DB" name="jdbc/Canton_Estore_DB" type="javax.sql.DataSource" />
+	<ResourceLink global="jdbc/Canton_CA_DB" name="jdbc/Canton_CA_DB" type="javax.sql.DataSource" />
+	<ResourceLink global="jdbc/Canton_Catalog_DB" name="jdbc/Canton_Catalog_DB" type="javax.sql.DataSource" />
+	<ResourceLink global="jdbc/Canton_OMS_DB" name="jdbc/Canton_OMS_DB" type="javax.sql.DataSource" />
+	<ResourceLink global="jdbc/Canton_Payment_DB" name="jdbc/Canton_Payment_DB" type="javax.sql.DataSource" />
+</Context>

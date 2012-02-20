@@ -1,0 +1,37 @@
+/*-------------------------------------------------------------------------
+version: 1.0
+author:  Bleum Canton Team
+email: charles.wang@bleum.com
+copyright:
+ <Bleum Inc. Copyright>
+ Copyright (C) 2011 Walmart Inc.
+ All Rights Reserved.  No use, copying or distribution of this
+ work may be made except in accordance with a valid license agreement from Bleum Inc..  This notice must be
+ included on all copies, modifications and derivatives of this work.
+ 
+ Bleum Inc. MAKES NO REPRESENTATIONS OR WARRANTIES
+ ABOUT THE SUITABILITY OF THE SOFTWARE, EITHER EXPRESS OR IMPLIED,
+ INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. Bleum Inc. 
+ SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF 
+ USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+ </Bleum Inc. Copyright>
+ 
+ -------------------------------------------------------------------------*/
+@CHARSET "UTF-8";
+
+#mainContentRight { width:190px; border-left:1px solid none; float:left; height:auto; padding-top:7px;}
+wmCountdown { font-size: 12px; text-align:center; margin:0 0 10px 0; color:#333}
+.wmCountdown span { font-size: 18px; font-weight:bold; margin:0 2px; color:#f60}
+.cdprod_img { width:100px; height:100px; background:#ccc;  margin:0 auto; margin-bottom:10px;}
+.cdprod_name { text-align:center; font-size:12px; margin-bottom:3px; }
+.cdprod_name a { color:#333; text-decoration:none; }
+.cdprod_name a:hover { text-decoration:underline; color:#f60;}
+
+.cdprod_price { text-align:center; margin-bottom:15px; font-size:12px; }
+.cdprod_price span { font-weight:bold; font-size:14px; color:#c00;}
+
+.cd_fight { background:url(../../images/qiang2.png); width:67px; height:68px; font-size:30px; font-weight:bold; color:#fff; overflow:hidden; text-align:center; position:absolute; margin:20px 0 0 110px; cursor:default;}
+
+#mainContentRight h4 { background: url("../../images/nav_button.gif") no-repeat -7px -180px; height:40px; padding:27px 0 0 55px; margin:0; }
+.CountdownContainer { border:1px solid #F0F0F0; border-top:none; padding:0 5px 5px 5px;}
