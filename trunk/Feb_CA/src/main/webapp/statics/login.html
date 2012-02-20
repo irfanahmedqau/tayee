@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Login In</title>
+	<!-- ExtJS -->
+	<link rel="stylesheet" type="text/css" href="http://192.168.129.35:8001/resources/css/ext-all.css" />
+	<script type="text/javascript" src="http://192.168.129.35:8001/bootstrap.js"></script>
+	
+	<!-- Custom Style -->
+	<style type="text/css">
+		#center_wrapper{margin:180px auto; width: 350px;}
+	</style>
+	
+	<!-- Custom Scripts -->
+	<script language="JavaScript" type="text/javascript">
+		Ext.require(['Ext.form.*']);
+		Ext.onReady(function(){
+			//Ext.QuickTips.init();
+		    var bd = Ext.getBody();
+
+		    var simpleForm = Ext.create('Ext.form.Panel', {
+		        url:'/ca/j_spring_security_check',
+		        frame:true,
+		        title: 'CA Login',
+		        bodyStyle:'padding:5px 5px 0',
+		        width: 350,
+		        fieldDefaults: {
+		            msgTarget: 'side',
+		            labelWidth: 75
+		        },
+		        defaultType: 'textfield',
+		        defaults: {
+		            anchor: '80%'
+		        },
+
+		        items: [{
+		            fieldLabel: 'User Name',
+		            name: 'userName',
+		            allowBlank:false
+		        },{
+		            fieldLabel: 'Password',
+		            name: 'password',
+		            allowBlank:false
+		        }],
+
+		        buttons: [{
+		            text: 'Save',
+		            handler: function() {
+		                var form = this.up('form').getForm();
+		                form.standardSubmit = true;
+		                if (form.isValid()) {
+		                    form.submit();
+		                }
+		            }
+		        },{
+		            text: 'Cancel'
+		        }]
+		    });
+		    simpleForm.render(document.getElementById('center_wrapper'));
+		});
+	</script>
+</head>
+<body>
+<div id="center_wrapper"></div>
+</body>
+</html>

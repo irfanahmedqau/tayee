@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder charset="UTF-8">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="FILEOUT" class="ch.qos.logback.core.FileAppender">
+		<file>D:\canton\springsource\vfabric-tc-server-developer-2.6.1.RELEASE\spring-insight-instance\ServerLog\log.txt</file>>
+		<append>true</append>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+		                                                                            
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILEOUT"/>
+	</root>
+	
+	<!-- Spring Logger -->
+	<logger name="org.springframework" level="DEBUG" />
+	
+	<!-- Hibernate Logger -->
+	<logger name="org.hibernate.SQL" level="DEBUG" />
+	<logger name="org.hibernate.type" level="INFO" />
+	<logger name="org.hibernate.tool.hbm2ddl" level="INFO" />
+	<logger name="org.hibernate.pretty" level="INFO" />
+	<logger name="org.hibernate.cache" level="INFO" />
+	<logger name="org.hibernate.transaction" level="WARN" />
+	<logger name="org.hibernate.jdbc" level="INFO" />
+	<logger name="org.hibernate.hql.ast.AST" level="WARN" />
+	<logger name="org.hibernate.secure" level="WARN" />
+	
+	<!-- eStore Logger -->
+	<logger name="com.bleum.canton" level="DEBUG" />
+	
+</configuration>
