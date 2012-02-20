@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bleum.canton.sample.entity">
+	<class name="User" table="T_USER">
+		<id name="id" column="ID" type="java.lang.String">
+			<generator class="uuid" />
+		</id>
+		<property name="userName" type="java.lang.String" column="USER_NAME" />
+		<property name="age" type="java.lang.Integer" column="AGE" />
+		<!-- <one-to-one name="passport" class="com.bleum.hibernate.entity.Passport" cascade="all" outer-join="true" /> -->
+		<!-- <many-to-one name="group" class="com.bleum.hibernate.entity.Group" column="GROUP_ID" unique="true" cascade="all"/> -->
+	</class>
+</hibernate-mapping>
